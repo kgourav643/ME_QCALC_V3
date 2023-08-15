@@ -8,9 +8,22 @@ public class App {
         return "Hello World!";
     }
 
+    
+
     public static void main(String[] args) {
-        StandardCalculator calc = new StandardCalculator();
-        int result = calc.add(1, 1);
-        System.out.println(result);
+
+        System.out.println(new App().getGreeting());
+
+        ScientificCalculator calc = new ScientificCalculator();
+
+        int result= calc.modulo(5, 2);
+
+        System.out.println("modulo =" + result);
+
     }
+
+
+
+
 }
+
